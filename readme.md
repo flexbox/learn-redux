@@ -1,13 +1,17 @@
-# Learn Redux
+# learn-redux
 
-A simple React + Redux implementation. This will be turned into a free video series once the app is totally fleshed out.
+> A simple React + Redux implementation
 
-## Running
+## Getting started
 
-First `npm install` to grab all the necessary dependencies. 
+    $ npm install
 
-Then run `npm start` and open <localhost:7770> in your browser.
+## Browser preview – _[http://localhost:7770](http://localhost:7770)_
+
+    $ npm start
 
 ## Production Build
 
-Run `npm build` to create a distro folder and a bundle.js file.
+Create a `bundle.js` file with
+
+    $ npm build
