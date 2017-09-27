@@ -15,14 +15,14 @@ const Photo = React.createClass({
           <CSSTransitionGroup transitionName="like"
             transitionEnterTimeout={300}
             transitionLeaveTimeout={300}>
-            <span key={post.likes} className="like-heart">{post.likes}</span>
+            <span key={post.likes} className="likes-heart">{post.likes}</span>
           </CSSTransitionGroup>
         </div>
 
         <figcation>
           <p>{post.caption}</p>
           <div className="control-buttons">
-            <button className="likes">
+            <button onClick={this.props.increment.bind(null, i)} className="likes">
               ❤ {post.likes}
             </button>
             <Link className="button" to={`/view/${post.code}`}>
